@@ -36,9 +36,10 @@ echo %*(data)
 
 var p1 = Person(name:"Clemens", age:45)
 echo %*(p1)
-# var o1 = Data(person:p1, list:@[1,2,5,6])
+# the object construction like thi does NOT work...
+var o1 = Data(person:p1, list:@[1,2,5,6])
 # this does NOT work???
 # echo %*(o1) 
 
-var t1 = TestD(name:"kdfjdlkfj", lst:@[1,2,5,6])
-echo %*(t1)
+#var t1 = TestD(name:"kdfjdlkfj", lst:@[1,2,5,6])
+#echo %*(t1)
