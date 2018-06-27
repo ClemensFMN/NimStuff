@@ -20,10 +20,7 @@ sq.add(4)
 for e in sq:
   echo e
 
-# we can use filter; the nice => syntax comes from the future module imported 
-# on top
-echo sq.filter(x=>x<3)
-
+# we can use filter
 # that's option 1 of the "normal" way to do it
 let sq1 = filter(sq) do (x:int) -> bool : x < 3
 echo sq1
@@ -31,4 +28,11 @@ echo sq1
 # that's option 2 of the "normal" way to do it
 let sq2 = filter(sq, proc(x:int):bool = x<3)
 echo sq2
+
+# this variant requires future as well, but contains types...
+echo filter(sq, (x:int) -> bool  => x<3)
+echo sq.filter((x:int) -> bool  => x<3)
+# the nice => syntax comes from the future module imported 
+# on top
+echo sq.filter(x=>x<3)
 
