@@ -1,5 +1,5 @@
 type
-  Person = object of RootObj
+  Person = object # of RootObj
     name:string
     age:int
 
