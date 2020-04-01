@@ -20,6 +20,10 @@ for i in 0..10:
 
 echo("Sum = ", mySum(@[1,2,3,4,5]))
 
+<<<<<<< HEAD
 echo(myMap(@[1,2,3,4,5], proc(x:int):int = x+1))
 # sugar package defines macro => above can therefore be simplified to:
 echo(myMap(@[1,2,3,4,5], x => x+1))
+=======
+
+>>>>>>> 5d9b60abed4031d9e9402be1c6a7baf9db46d6c5
